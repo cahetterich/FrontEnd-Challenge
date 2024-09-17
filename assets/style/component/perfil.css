@@ -1,0 +1,41 @@
+/* Estilo do perfil */
+.profile-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+}
+
+.profile-about,
+.profile-personal-info,
+.profile-interests,
+.profile-experience,
+.profile-education,
+.profile-certifications {
+    margin-bottom: 30px;
+}
+
+.profile-about p,
+.profile-experience .experience-item p,
+.profile-education .education-item p,
+.profile-certifications .certification-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.profile-experience .experience-item,
+.profile-education .education-item,
+.profile-certifications .certification-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.profile-experience .experience-item h5,
+.profile-education .education-item h5,
+.profile-certifications .certification-item h5 {
+    font-size: 1.25rem;
+    color: #333;
+}
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recruta AI - Plataforma de Recrutamento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style/component/index.css">
+    <link rel="stylesheet" href="/assets/style/component/dashboard.css">
+</head>
+<body>
+    <!-- Navbar superior para telas grandes -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="d-flex align-items-center text-secondary text-decoration-none dropdown-toggle"
+                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu do usuário">
+                        <img src="/assets/img/downloadedImage (27).png" alt="Foto do perfil do usuário" width="35"
+                            height="35" class="rounded-circle me-2">
+                        <!-- <strong>Sua conta</strong> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="./edicaoPerfil.html">Editar perfil</a></li>
+                        <li><a class="dropdown-item" href="./planoUso.html">Plano de uso</a></li>
+                        <li><a class="dropdown-item" href="./configuracao.html">Configurações</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="../../index.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Grid layout -->
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-lg-2 d-none d-lg-block bg-dark text-white sidebar vh-100 fixed-top pt-4">
+                <!-- Logo e Toggler para telas pequenas -->
+                <a href="/assets/pages/inicio.html" class="navbar-brand d-flex align-items-center text-white m-auto">
+                    <img src="/assets/img/logo.png" alt="Logo Recruta AI" width="40" height="40" class="me-2">
+                    <h4>Recruta AI</h4>
+                </a>
+                <hr class="border border-secondary border-1 opacity-50">
+                <ul class="nav flex-column ">
+                    <li class="nav-item m-1">
+                        <a href="/assets/pages/inicio.html" class="nav-link text-white btn btn-secondary"
+                            aria-label="Início">
+                            <i class="fa-solid fa-house me-2"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./perfil.html" class="nav-link text-white btn btn-secondary" aria-label="Perfil">
+                            <i class="fa-solid fa-user me-2"></i>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./dashboard.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-solid fa-chart-line me-2"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./empregos.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-solid fa-briefcase me-2"></i>
+                            Empregos
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./favoritos.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-regular fa-star me-2"></i>
+                            Favoritos
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./mensagens.html" class="nav-link text-white btn btn-primary active">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            Mensagens
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./alertas.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fas fa-bell me-2"></i>
+                            Alertas
+                        </a>
+                    </li>
+                    <!-- Outras opções da sidebar -->
+                </ul>
+                <hr class="border border-secondary border-1 opacity-50">
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar para telas pequenas -->
+    <nav class="navbar navbar-dark bg-dark fixed-top d-lg-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assets/img/logo.png" alt="Logo Recruta AI" width="40"
+                    height="40" class="me-2">Recruta AI</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSmall"
+                aria-controls="navbarSmall" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSmall">
+                <hr class="border border-secondary border-1 opacity-80">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/assets/pages/inicio.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-solid fa-house me-2"></i> Início
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./perfil.html" class="nav-link text-white btn btn-secondary" aria-label="Perfil">
+                            <i class="fa-solid fa-user me-2"></i>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./dashboard.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./empregos.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-solid fa-briefcase me-2"></i> Empregos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./favoritos.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fa-regular fa-star me-2"></i> Favoritos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./mensagens.html" class="nav-link text-white btn btn-primary active">
+                            <i class="fa-solid fa-envelope me-2"></i> Mensagens
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="./alertas.html" class="nav-link text-white btn btn-secondary">
+                            <i class="fas fa-bell me-2"></i>
+                            Alertas
+                        </a>
+                    </li>
+                </ul>
+                <hr class="border border-secondary border-1 opacity-80">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropend">
+                        <a href="#"
+                            class="d-flex align-items-center text-secondary text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"
+                            aria-label="Menu do usuário">
+                            <img src="/assets/img/downloadedImage (27).png" alt="Foto do perfil do usuário" width="35"
+                                height="35" class="rounded-circle me-2">
+                            <strong>Sua conta</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow mt-2"
+                            aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="./edicaoPerfil.html">Editar perfil</a></li>
+                            <li><a class="dropdown-item" href="./planoUso.html">Plano de uso</a></li>
+                            <li><a class="dropdown-item" href="./configuracao.html">Configurações</a></li>
+                            <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../../index.html">Sair</a></li>
+                </ul>
+                <hr class="border border-secondary border-1 opacity-80">
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main class="col-lg-9 ms-auto me-5 px-5 pt-4 container">        
+            <div class="row">
+                <!-- Lista de contatos -->
+                <div class="col-12 col-md-4 col-lg-3 p-0 border-end" id="contact-list">
+                    <div class="bg-light p-3 border-bottom">
+                        <h5>Mensagens</h5>
+                        <input type="text" class="form-control" placeholder="Buscar...">
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center p-3">
+                            <img src="../img/downloadedImage - 2024-05-12T144455.028.png" alt="Avatar" class="rounded-circle me-3" style="width: 40px;">
+                            <div>
+                                <h6 class="mb-0">Gabriela Correia</h6>
+                                <small class="text-muted">Claro, podemo...</small>
+                            </div>
+                            <span class="badge bg-success ms-auto">3</span> <!-- Badge para novas mensagens -->
+                        </li>
+                        <!-- Repetir para outros contatos -->
+                        <li class="list-group-item d-flex align-items-center p-3">
+                            <img src="../img/downloadedImage - 2024-05-12T144421.529.png" alt="Avatar" class="rounded-circle me-3" style="width: 40px;">
+                            <div>
+                                <h6 class="mb-0">Márcia Santana</h6>
+                                <small class="text-muted">Você pode aplic...</small>
+                            </div>
+                            <span class="badge bg-success ms-auto">1</span> <!-- Badge para novas mensagens -->
+                        </li>
+                        <!-- Repetir para outros contatos -->                        
+                        <li class="border border-dark list-group-item d-flex align-items-center p-3">
+                            <img src="../img/downloadedImage (29).png" alt="Avatar" class="rounded-circle me-3" style="width: 40px;">
+                            <div>
+                                <h6 class="mb-0">Camila da Silva</h6>
+                                <small class="text-muted">Digitando...</small>
+                            </div>
+                            <span class="badge bg-success ms-auto"></span> <!-- Badge para novas mensagens -->
+                        </li>
+                        <!-- Repetir para outros contatos -->
+                    </ul>                   
+                </div>        
+                <!-- Área de mensagens -->
+                <div class="col-md-8 col-lg-9 p-0">
+                    <div class="bg-dark text-white p-3 d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/downloadedImage (29).png" alt="Avatar" class="rounded-circle me-3" style="width: 40px;">
+                            <div>
+                                <h6 class="mb-0">Camila da Silva</h6>
+                                <small>Online</small>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-light btn-sm">Opções</button>
+                        </div>
+                    </div>
+                    <div class="p-4 chat-window bg-light" style="height: 70vh; overflow-y: scroll;">
+                        <!-- Mensagens -->
+                        <div class="d-flex justify-content-start mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <p class="mb-0">Olá, me chamo Camila e sou recrutadora da Tech Raid.</p>
+                                <small class="text-muted">12:45</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-3">
+                            <div class="bg-primary text-white p-3 rounded shadow-sm">
+                                <p class="mb-0">Olá Camila. Tudo bem?</p>
+                                <small>12:46</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start mb-3">
+                            <div class="bg-white p-3 rounded shadow-sm">
+                                <p class="mb-0">Tudo ótimo! Vi que você fez a candidatura em nossa vaga de Desenvolvedor Java.<br>Você teria disponibilidade em realizar uma entrevista essa semana?</p>
+                                <small class="text-muted">12:46</small>
+                            </div>
+                        </div>
+                        <!-- Repetir mensagens -->
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Digite uma mensagem...">
+                            <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+    </main>
+    <!-- Footer -->
+    <footer class="footer text-white text-center bg-dark pt-3">
+        <p> © 2024 | Todos os direitos reservados | <a href="#">Termos de uso</a> | <a href="#">Política de
+                privacidade</a> | <a href="#">FAQ</a> | <a href="#">Contato</a> </p>
+        <img src="/assets/img/logo.png" alt="Logo Recruta AI" width="30" height="30" class="mb-3">
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

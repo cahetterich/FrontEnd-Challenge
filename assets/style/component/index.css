@@ -1,0 +1,42 @@
+        body {
+            scroll-behavior: smooth;
+        }
+
+        
+        section {
+            padding: 60px 0;
+        }
+
+        /* Seção Sobre com imagem de fundo */
+        #sobre {
+            background: url('/assets/img/pexels-olly-3861814.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+
+        #sobre h2, #sobre p {
+            color: white;
+        }
+
+        /* Estilo dos planos */
+        .planos .card {
+            transition: transform 0.3s;
+        }
+
+        .planos .card:hover {
+            transform: scale(1.05);          
+        }
+
+        /* Estilo do footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #007bff;
+        }
+ 

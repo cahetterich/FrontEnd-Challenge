@@ -1,0 +1,53 @@
+body {
+    background-color: #000000;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    background-color: #E9ECEF;
+    border: none;
+    color: #6C757D;
+    margin-bottom: 10px;
+}
+
+.btn-social:hover {
+    background-color: #D3D8DB;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #6C757D;
+}
+
+.login-link {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.input-group-text {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
