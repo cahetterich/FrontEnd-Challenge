@@ -18,7 +18,12 @@
         <div class="form-container text-center">
             <div class="logo">Recruta AI<a href="/index.html" class="signup-link"><img src="../img/logo.png" alt="Logo Recruta AI" width="40" height="40" class="d-inline-block m-1"></a></div>
             <h3 class="mb-3">Cadastre-se</h3>
-            <form id="signupForm">
+            <form id="signupForm"> 
+                <div class="mb-3 text-start">
+                    <label for="username" class="form-label">Nome único de usuário:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <small class="error-message" id="usernameError"></small>
+                </div>
                 <div class="mb-3 text-start">
                     <label for="firstName" class="form-label">Primeiro nome</label>
                     <input type="text" class="form-control" id="firstName" placeholder="Primeiro nome">

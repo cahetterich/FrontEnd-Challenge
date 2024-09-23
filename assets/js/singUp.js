@@ -80,3 +80,49 @@
             }
         });
     
+        //back end
+
+        document.getElementById('signupForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+        
+            // Coletar os dados do formulário
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const username = document.getElementById('username').value.trim(); 
+            const usernameError = document.getElementById('usernameError');
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (username === '') {
+                usernameError.textContent = 'Por favor, insira um username.';
+                isValid = false;
+            } else {
+                usernameError.textContent = '';
+            }
+                    
+            let isValid = true;        
+                   
+            if (isValid) {
+                try {
+                    const response = await fetch('http://localhost:8080/api/auth/signup', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ firstName, lastName, email, username, password })
+                    });
+        
+                    if (response.ok) {
+                        alert('Usuário registrado com sucesso!');
+                        window.location.href = './login.html';
+                    } else {
+                        const error = await response.text();
+                        alert(error);
+                    }
+                } catch (error) {
+                    console.error('Erro:', error);
+                }
+            }
+        });
+        
