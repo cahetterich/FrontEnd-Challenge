@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./assets/style/component/index.css">
     <link rel="stylesheet" href="/assets/style/component/dashboard.css">
 </head>
-
 <body>
     <!-- Navbar superior para telas grandes -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -73,13 +72,13 @@
                         </a>
                     </li>
                     <li class="nav-item m-1">
-                        <a href="./empregos.html" class="nav-link text-white btn btn-primary active">
+                        <a href="./empregos.html" class="nav-link text-white btn btn-secondary">
                             <i class="fa-solid fa-briefcase me-2"></i>
                             Empregos
                         </a>
                     </li>
                     <li class="nav-item m-1">
-                        <a href="./favoritos.html" class="nav-link text-white btn btn-secondary">
+                        <a href="./favoritos.html" class="nav-link text-white btn btn-primary active">
                             <i class="fa-regular fa-star me-2"></i>
                             Favoritos
                         </a>
@@ -132,12 +131,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./empregos.html" class="nav-link text-white btn btn-primary active">
+                        <a href="./empregos.html" class="nav-link text-white btn btn-secondary">
                             <i class="fa-solid fa-briefcase me-2"></i> Empregos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./favoritos.html" class="nav-link text-white btn btn-secondary">
+                        <a href="./favoritos.html" class="nav-link text-white btn btn-primary active">
                             <i class="fa-regular fa-star me-2"></i> Favoritos
                         </a>
                     </li>
@@ -179,103 +178,123 @@
     </nav>
     <!-- Main -->
     <main class="col-lg-9 ms-auto me-5 px-5 pt-4">
-        <section class="filter-jobs bg-secondary-subtle p-1 rounded">
-            <div class="card  p-2 text-bg-light rounded h-100">
-                <form class="row g-3 mb-4 align-content-center">
-                    <div class="col-md-3">
-                        <label for="location" class="form-label">Localização</label>
-                        <select id="location" class="form-select">
-                            <option selected>Escolher...</option>
-                            <option value="1">São Paulo, SP</option>
-                            <option value="2">Remoto</option>
-                            <!-- Adicionar mais opções -->
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="type" class="form-label">Tipo de Contrato</label>
-                        <select id="type" class="form-select">
-                            <option selected>Escolher...</option>
-                            <option value="1">CLT</option>
-                            <option value="2">PJ</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="area" class="form-label">Área</label>
-                        <select id="area" class="form-select">
-                            <option selected>Escolher...</option>
-                            <option value="1">Desenvolvimento</option>
-                            <option value="2">Marketing</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 align-content-center">
-                        <button class="btn btn-outline-secondary"><i class="fas fa-edit"></i> Editar opções de busca</button>
-                    </div>
-                    <div class="col-md-12 text-end align-content-center mt-3">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar vagas ou empresas"
-                            aria-label="Search">
-                        <button class="btn btn-primary mt-3" type="submit">Pesquisar</button>
-                    </div>
-                </form>
+       <!-- Header da Vaga -->
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="fw-bold">Título da vaga</h1>
+            <p class="text-muted">Nome da empresa - <em>Slogan</em></p>
+            <p><strong>Contrato:</strong> PJ - Remoto</p>
+            <p><strong>Salário:</strong> R$5.000,00 - R$7.000,00</p>
+            <p><strong>Nível de experiência:</strong> Sênior</p>
+            <p><strong>Idiomas:</strong> Português, Inglês</p>
+        </div>
+        <div class="col-md-4 text-end">
+            <button class="btn btn-primary">Se candidatar</button>
+            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Cidade, País</p>
+        </div>
+    </div>
+
+    <!-- Seção de Compatibilidade e Links -->
+    <div class="row my-4">
+        <div class="col-md-8">
+            <div class="p-3 bg-light rounded">
+                <h4 class="fw-bold">Sua compatibilidade com a vaga: <span class="text-primary">95%</span></h4>
+                <p><strong>Habilidades:</strong> 5 de 6</p>
+                <p><strong>Falta:</strong> Item 6</p>
+                <p><strong>Experiências relevantes:</strong> <a href="#" class="text-primary">Detalhes</a></p>
             </div>
-        </section>
-        <!-- Seção de Sugestões de Vagas -->
-        <section class="suggestions-jobs my-5">
-            <h4 class="mb-4">Sugestões de vagas para você</h4>
-            <div class="card p-2 bg-dark rounded h-100">
-                <div class="row m-2">
-                    <!-- Sugestão de Vaga 1 -->
-                    <div class="col-md-3">
-                        <div class="suggestion-job-card bg-light p-3 mb-4 border rounded">
-                            <h6 class="text-primary">Desenvolvedor Full Stack</h6>
-                            <p>Empresa: Tech Corp</p>
-                            <p>Localização: São Paulo, SP</p>
-                            <button class="btn btn-primary w-100">Ver mais detalhes</button>
-                        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 bg-light rounded">
+                <h5>Links</h5>
+                <p><a href="#" class="text-primary">LinkedIn</a> | <a href="#" class="text-primary">Facebook</a></p>
+                <p><strong>Site da empresa:</strong> <a href="#">www.sitedaempresa.com.br</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Habilidades Necessárias -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <div class="p-3 bg-light rounded">
+                <h5>Habilidades necessárias</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Item 1</li>
+                    <li class="list-inline-item">Item 2</li>
+                    <li class="list-inline-item">Item 3</li>
+                    <li class="list-inline-item">Item 4</li>
+                    <li class="list-inline-item">Item 5</li>
+                    <li class="list-inline-item">Item 6</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Descrição da Vaga -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="p-4 bg-light rounded">
+                <h5>Descrição da vaga</h5>
+                <p>Feugiat lectus:</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempora ipsam iusto nihil voluptatum eos, laudantium nulla mollitia aut alias minima exercitationem! Adipisci natus corporis, minus error doloribus iusto molestias?<br>
+                Veniam laborum rerum vitae nam officiis obcaecati assumenda dolor nulla qui esse, tempore fugit omnis fugiat culpa at recusandae aspernatur sed facilis cum accusamus. Earum dolore enim voluptatum quis. Cum.
+                Praesentium debitis maiores alias porro fugiat doloremque, dolorem maxime cum, tempora expedita facere illum placeat ea libero possimus autem molestias totam, aliquid modi repudiandae impedit neque reprehenderit. Quae, dolorum temporibus!<br>
+                Exercitationem ab libero tempore, labore, soluta eum in rem doloribus nemo, nobis laborum obcaecati amet voluptatem repellendus voluptatum necessitatibus est cum fugiat dolore voluptas eos magnam possimus autem quisquam. Eligendi.<br>
+                Libero ratione fuga et, exercitationem aut mollitia est deleniti cumque deserunt magnam nostrum temporibus! Blanditiis vero tempora reprehenderit fuga, in commodi neque doloribus, voluptatem unde saepe nesciunt debitis, mollitia id!<br>
+                At aperiam est ipsa enim mollitia, ea veniam harum assumenda, praesentium esse hic quas consectetur ducimus unde fuga corporis optio aut nobis nulla laudantium dolorem, eum saepe perspiciatis maxime? Harum?
+                Vitae velit molestiae quam. Porro expedita aliquid, dignissimos in cum modi, rem maxime aliquam id quaerat, quidem illo provident. Sit optio soluta suscipit sapiente error adipisci repellat a reiciendis labore.
+                Assumenda, quidem quisquam, quasi ullam deserunt iusto voluptas libero porro eligendi quibusdam inventore eius ab ad perspiciatis corporis consectetur. Rem modi provident magnam, odio quaerat dicta repellat perspiciatis quis facere.                
+            </div>
+        </div>
+    </div>
+
+    <!-- Requisitos -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="p-4 bg-light rounded">
+                <h5>Requisitos</h5>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detalhes -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="p-4 bg-light rounded">
+                <h5>Detalhes</h5>
+                <p>At aperiam est ipsa enim mollitia, ea veniam harum assumenda, praesentium esse hic quas consectetur ducimus unde fuga corporis optio aut nobis nulla laudantium dolorem, eum saepe perspiciatis maxime? Harum?Vitae velit molestiae quam. Porro expedita aliquid, dignissimos in cum modi, rem maxime aliquam id quaerat,quidem illo provident. Sit optio soluta suscipit sapiente error adipisci repellat a reiciendis labore.Assumenda, quidem quisquam, quasi ullam deserunt iusto voluptas libero porro eligendi quibusdam inventore eius ab ad perspiciatis corporis consectetur. Rem modi provident magnam, odio quaerat dicta repellat erspiciatis quis facere.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vagas Relacionadas -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h4>Vagas de emprego relacionadas (2)</h4>
+            <div class="row">
+                <!-- Card de Vaga Relacionada -->
+                <div class="col-md-3">
+                    <div class="card p-3 bg-light">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Descrição da vaga</p>
+                        <button class="btn btn-primary">Saber mais</button>
                     </div>
-                    <!-- Sugestão de Vaga 2 -->
-                    <div class="col-md-3">
-                        <div class="suggestion-job-card bg-light p-3 mb-4 border rounded">
-                            <h6 class="text-primary">Analista de Dados</h6>
-                            <p>Empresa: Data Insights</p>
-                            <p>Localização: Remoto</p>
-                            <button class="btn btn-primary w-100">Ver mais detalhes</button>
-                        </div>
-                    </div>
-                    <!-- Sugestão de Vaga 3 -->
-                    <div class="col-md-3">
-                        <div class="suggestion-job-card bg-light p-3 mb-4 border rounded">
-                            <h6 class="text-primary">Engenheiro de Software</h6>
-                            <p>Empresa: Code Innovations</p>
-                            <p>Localização: Curitiba, PR</p>
-                            <button class="btn btn-primary w-100">Ver mais detalhes</button>
-                        </div>
-                    </div>
-                    <!-- Sugestão de Vaga 3 -->
-                    <div class="col-md-3">
-                        <div class="suggestion-job-card bg-light p-3 mb-4 border rounded">
-                            <h6 class="text-primary">Desenvolvedor Front-End</h6>
-                            <p>Empresa: Code Innovations</p>
-                            <p>Localização: Curitiba, PR</p>
-                            <button class="btn btn-primary w-100">Ver mais detalhes</button>
-                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-3 bg-light">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Descrição da vaga</p>
+                        <button class="btn btn-primary">Saber mais</button>
                     </div>
                 </div>
             </div>
-            <!-- Paginação centralizada -->
-            <nav aria-label="Paginação de sugestões de vagas" class="d-flex justify-content-center m-4">
-                <ul class="pagination">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Próximo</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        </div>
+    </div>
     </main>
     <!-- Footer -->
     <footer class="footer text-white text-center bg-dark pt-3">
